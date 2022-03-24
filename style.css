@@ -137,6 +137,7 @@ header {
     width: 80px;
     height: 80px;
     margin-bottom: 20px;
+    animation: scaleup 6s ease-in-out infinite;
 }
 .grid-box h1 {
     color: whitesmoke;
@@ -147,12 +148,14 @@ header {
 }
 .webdesign {
     background: var(--gradient-2);
+    margin-top: 30px;
 }
 .marketing{
     background: var(--gradient-3);
 }
 .branding{
     background: var(--gradient-4);
+    margin-top: 30px;
 }
 .services-content {
     padding: 3rem;
@@ -175,11 +178,52 @@ header {
     z-index: -1;
     animation: scaleup 6s ease-in-out infinite;
 }
+/* Numbers */
+.mockup-img{
+    flex-basis: 50%;
+}
+.mockup-img img{
+    max-width: 100%;
+    margin: auto 20px;
+}
+.hypclients {
+    background: var(--gradient-1);
+}
+.prjcompleted{
+    background: var(--gradient-2);
+}
+.runningprj{
+    background: var(--gradient-3);
+}
+.designs{
+    background: var(--gradient-4);
+}
+.numbers .grid-box h2 {
+    color: whitesmoke;
+    font-weight: 400;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.numbers .grid-box h1{
+    font-size: 40px;
+}
+.numbers .grid-box{
+    transition: transform 1s ease-in-out;
+}
+.numbers .grid-box:hover{
+    transform: translateY(-30px);
+}
 
 /* animation */
-@keyframes scaleup{
+@keyframes scaleup {
     0%{
         transform: scale(1.2);
     }
-   
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.2);
+    }
+}
 
